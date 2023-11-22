@@ -1,0 +1,328 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+}
+.main {
+  position: relative;
+  padding: 10px 50px;
+  display: flex;
+  gap: 50px;
+  justify-content: start;
+  align-items: start;
+}
+@media only screen and (max-width: 600px) {
+  .main {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    margin: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+  }
+}
+/* 
+//Quotes */
+.quoteContainer {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 10px 5px;
+  top: 250px;
+  width: 290px;
+  height: 300px;
+  background-color: #192a32;
+  border-radius: 18px;
+  border: 1px solid black;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.quoteHead {
+  color: #31c4be;
+  font-family: DM Sans;
+  font-size: 26px;
+  font-weight: 800;
+}
+.quoteIcon {
+  margin-top: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #31c4be;
+}
+.quote {
+  color: #f2b237;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 24px;
+}
+
+/* NewGame-Styles */
+.main-container {
+  width: 400px;
+  height: 570px;
+  border-radius: 43px;
+  background-color: #192a32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pick-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  background-color: #1f3540;
+  border-radius: 7px;
+  width: 307px;
+  height: 154px;
+  flex-shrink: 0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.btn-container {
+  width: 276px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background-color: #192a32;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.btnX,
+.btnO {
+  width: 100%;
+  padding: 10px 10px;
+  background-color: #192a32;
+  border: none;
+}
+
+.selected {
+  background-color: #d9d9d9;
+}
+.selected > img {
+  filter: invert(100%);
+}
+.newgame,
+.newgame-h,
+.invite {
+  width: 307px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #f2b237;
+  color: #192a32;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-align: center;
+  cursor: pointer;
+}
+.newgame-h {
+  border-radius: 5px;
+  background: #32c4c3;
+}
+
+.invite {
+  width: 225px;
+  height: 33px;
+  flex-shrink: 0;
+  margin-top: 30px;
+}
+
+.toast {
+  width: 220px;
+  height: 41px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background-color: #192a32;
+  color: #f2b237;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+/* mainGame */
+.game-top-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 60px;
+}
+.turn-btn {
+  width: 86px;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background-color: #1f3540;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #a8bec9;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.retry {
+  width: 32px;
+  height: 31px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background-color: #a7bdc8;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.box {
+  width: 86px;
+  height: 86px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #1f3540;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: DM Sans;
+  font-size: 25px;
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.box-container {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.score-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.score-card {
+  width: 86px;
+  height: 49px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #31c4be;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1e1e1e;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+.ties {
+  border-radius: 10px;
+  background: #a8bec9;
+}
+.cpu {
+  border-radius: 10px;
+  background: #f2b237;
+}
+.quit {
+  position: absolute;
+  width: 400px;
+  height: 570px;
+  background-color: hsl(199, 33%, 15%, 0.8);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 43px;
+}
+.quit-screen {
+  position: absolute;
+  width: 400px;
+  height: 177px;
+  flex-shrink: 0;
+  z-index: 10;
+  background: #192a32;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  color: #f2b237;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.quit-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.quit-btn-pa,
+.quit-btn-q {
+  border: none;
+  width: 113px;
+  height: 33px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #31c4be;
+  color: #192a32;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.quit-btn-q {
+  border-radius: 10px;
+  background: #f2b237;
+}
